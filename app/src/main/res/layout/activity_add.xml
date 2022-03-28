@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddActivity"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="INSERT DATA"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@drawable/ima"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/image1"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="id"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/image2"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Name"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/edbrithday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/lich"
+                android:drawablePadding="10dp"
+                android:fontFamily="sans-serif-black"
+                android:hint="Birthday"
+                android:singleLine="true"
+                android:textSize="20dp" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/spjob"
+                android:entries="@array/spintjob">
+            </Spinner>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rdgrup"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/rdnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/nam"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="RadioButtonClicked"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/rdnu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/nu"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="RadioButtonClicked"
+                    android:text="female" />
+            </RadioGroup>
+            <Button
+                android:drawableLeft="@drawable/addd"
+                android:drawablePadding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:id="@+id/bntadd"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
